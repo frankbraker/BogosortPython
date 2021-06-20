@@ -4,11 +4,10 @@ from random import randint, seed
 
 from bogoSorter import BogoSorter as bs
 
-
 if len(sys.argv) == 1 or len(sys.argv) < 5:
     print(
         f"\n   usage: python {sys.argv[0]} [seed elementsCount minVal maxVal].\n\nFailing to provide all 4 arguments results in the following queries:\n"
-        )
+    )
     s = int(input("Seed : "))
 
     n = int(input("Enter number elements to generate : "))
@@ -34,5 +33,5 @@ print("\nSorted list is - ")
 
 startTime = time.time()
 sortedlist = sorter.doSort()
-print(f"elapsed Time = {time.time() - startTime}" )
+print(f"elapsed Time = {time.time() - startTime}")
 print(sortedlist)
