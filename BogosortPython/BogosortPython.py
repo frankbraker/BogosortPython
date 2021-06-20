@@ -6,7 +6,8 @@ from bogoSorter import BogoSorter as bs
 
 if len(sys.argv) == 1 or len(sys.argv) < 5:
     print(
-        f"\n   usage: python {sys.argv[0]} [seed elementsCount minVal maxVal].\n\nFailing to provide all 4 arguments results in the following queries:\n"
+        f"\n   usage: python {sys.argv[0]} [seed elementsCount minVal maxVal].\n\n"
+        "Failing to provide all 4 arguments results in the following queries:\n"
     )
     s = int(input("Seed : "))
 

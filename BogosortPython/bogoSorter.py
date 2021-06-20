@@ -3,8 +3,6 @@ from random import randint
 
 class BogoSorter(object):
 
-    array = []
-
     # BogoSorter class takes an array and creates an output array that is sorted
     def __init__(self, input):
         self.array = input
@@ -19,8 +17,6 @@ class BogoSorter(object):
             return False
 
     def doSort(self):
-        len_array = len(self.array)
-
         while False == self.isSorted():
 
             a = self.array.copy()
