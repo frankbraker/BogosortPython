@@ -17,7 +17,7 @@ class BogoSorter(object):
             return False
 
     def doSort(self):
-        while False == self.isSorted():
+        while not self.isSorted():
 
             a = self.array.copy()
             b = []
